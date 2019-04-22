@@ -1,0 +1,50 @@
+{
+  "name": "testing-hooks",
+  "version": "0.1.0",
+  "description": "Testing hooks",
+  "author": "Wil Wilsman<hello@wilwilsman.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "src",
+    "index.js",
+    "react-dom.js",
+    "vue.js"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "eslint --ignore-path .gitignore ./",
+    "start": "karma start",
+    "test": "yarn start --single-run",
+    "postpublish": ".circleci/tag"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "expect": "^24.7.1",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^3.0.5",
+    "mocha": "^6.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "vue": "^2.6.10",
+    "webpack": "^4.30.0"
+  }
+}

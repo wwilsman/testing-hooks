@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "../.eslintrc.json",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "no-return-assign": 0,
+    "no-unused-expressions": 0,
+    "react/prop-types": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
