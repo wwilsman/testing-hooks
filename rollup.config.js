@@ -10,7 +10,7 @@ const common = {
 
 const configFor = (file, config = {}) => ({
   input: `src/${file}`,
-  output: { format: 'es', file },
+  output: { format: 'cjs', file },
   ...common,
   ...config
 });
